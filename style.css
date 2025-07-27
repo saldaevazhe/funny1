@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff0f5;
+    color: #333;
+}
+header{
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1{
+    font-size: 42px;
+    color: white;
+}
+
+header p{
+    font-size: 18px;
+    color: white;
+    margin-top: 10px;
+}
+nav{
+    background-color: #ffb6c1;
+    font-size: 15px;
+    text-align: center;
+    padding: 12px 0;
+}
+nav a{
+    margin: 0 15px;
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+nav a:hover{
+    color: #5f158d;
+
+}
+
+section{
+    padding: 50px 20px ;
+    max-width: 1100px;
+    margin: auto;
+}
+h2{
+    font-size: 28px;
+    color: #d6336c;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.services{
+    display: flex;
+    flew-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-left:-300px ;
+    
+}
+.service{
+    background-color: #ffe4e1;
+    padding:20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1) ;
+    text-align: center;
+    margin-top: 100px;
+    
+   
+    
+}
+.service h3{
+    color:#c2185b;
+     margin-bottom: 10px;
+     text-align: center;
+     
+     
+}
+
+#obrat{
+    background-color: #ff9a9e;
+}
+.knopka{
+    color:white;
+    margin-top: -30px;
+    p{
+        margin-top: 30px;
+    }
+}
+
+footer {
+  background-color: #ffb6c1;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) 
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+header h1 {
+    font-size: 32px;
+  }
+
+#forma{
+    margin-bottom: -70px;
+    margin-left: -20px;
+}
+.krug {
+    margin-left: 150px;
+    margin-top: -22px;
+}
+
+button:hover {
+  background-color: #891e3b; /* Меняет цвет фона кнопки при наведении */
+  transform: scale(1.1); /* Увеличение кнопки при наведении */
+}
+.fancy-submit {
+  background-color: #e6d6dd; /* Цвет фона кнопки */
+  color: rgb(244, 240, 242); /* Цвет текста внутри кнопки */
+  padding: 5px 15px; /* Внутренние отступы: сверху/снизу — 5px, слева/справа —15px */
+  border: none; /* Убирает рамку у кнопки */
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer; /* Меняет курсор на указатель при наведении (указывает, что это кликабельная кнопка) */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.fancy-submit:hover {
+  background-color: #b92957;
+  transform: scale(1.1); /* Плавное изменение цвета и размера при наведении */
+}
+
+.animated-box { /* Стили для блока */
+  text-align: center;
+  background-color: white; /* Белый фон */
+  color:#333;
+  padding: 30px 30px; /* Внутренние отступы */
+  border-radius: 12px; /* Скругление углов */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Тень */
+  font-size: 18px; /* Размер шрифта */
+  opacity: 0; /* Сначала невидим */
+  animation: fadeIn 1.5s ease-in-out forwards, float 4s ease-in-out infinite;
+}/* Анимации */
+
+/* === Анимация появления === */
+@keyframes fadeIn { /* Определяем анимацию "появление" */
+  to {
+    opacity: 1; /* В конце — полная видимость */
+  }
+}
+
+/* === Анимация "плавания" === */
+@keyframes float { /* Определяем анимацию "вверх-вниз" */
+  0%, 100% {
+    transform: translateY(0); /* Начальная/конечная позиция */
+  }
+  50% {
+    transform: translateY(-15px); /* Поднимается вверх на 15px */
+  }
+}
+.online{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ff9a9e;
+    border: white;
+    color: #fff0f5;
+    font-size: 16px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.meik{
+    margin-left: 20px;
+    padding: 15px;
+    border: 2px solid #b23b92;
+    border-radius: 8px;
+    width: 160px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+
+.manik{
+    margin-left: 120px;
+    margin-bottom: 100px;
+    margin-top: -230px;
+    padding: 20px;
+    border: 2px solid #b23b92;
+    border-radius: 8px;
+    width: 170px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    height: 200px;
+
+}
+
+
+.services{
+    margin-left: 50px;
+}
+.images-row {
+    
+    display: flex;
+    flex-direction: row; /* по умолчанию, можно не указывать */
+    gap: 10px; /* расстояние между изображениями, по желанию */
+    align-items: center; /* по вертикали по центру */
+    box-shadow: 3px 3px 5px 2px #b92957;;
+    border-radius: 50px;
+   
+}
+.small-img{
+     width: 180px;
+    height: 150px;
+    margin-left: 65px;
+    border-radius: 50px;
+ box-shadow: 3px 3px 5px 2px #b92957;;
+  
+}
+.big-img{
+     width: 180px;
+    height: 150px;
+    border-radius: 50px;
+    box-shadow: 3px 3px 5px 2px #b92957;;
+}
+.small-img1{
+     margin-right: 35px;
+     margin-left: 40px;
+      width: 180px;
+    height: 150px;
+    border-radius: 35px;
+     box-shadow: 3px 3px 5px 2px #b92957;;
+   
+}
